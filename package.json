@@ -6,6 +6,8 @@
     "path": "cz-conventional-changelog"
   },
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "format:watch": "onchange \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" -- prettier --write {{changed}}",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -40,7 +42,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "gts": "^5.3.1",
+    "onchange": "^7.1.0",
     "postcss": "^8",
+    "prettier": "^3.3.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.3"
   },
